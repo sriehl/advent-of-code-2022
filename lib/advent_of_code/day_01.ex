@@ -7,8 +7,7 @@ defmodule AdventOfCode.Day01 do
 
   defp parse_input(input) do
     input
-    |> String.trim()
-    |> String.split("\n\n")
+    |> String.split("\n\n", trim: true)
     |> Enum.map(&String.split/1)
     |> Enum.map(&sum_strings/1)
   end
