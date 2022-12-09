@@ -50,8 +50,6 @@ defmodule AdventOfCode.Day05 do
 
   def part1(input) do
     [stacks, instructions] = parse_input(input)
-    IO.inspect(stacks)
-    IO.inspect(instructions)
     result = do_instructions(stacks, instructions)
 
     result
